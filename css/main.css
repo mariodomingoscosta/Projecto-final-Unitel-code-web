@@ -1,0 +1,441 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Fontes de letras / variáveis*/
+:root{
+    --font-primaria:"Oswald";
+    --font-secundaria:"Balsamiq Sans";
+    --font-terciaria:"Commissioner";
+}
+
+/*Sessao conectar-se*/
+section.modalCastro{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(5, 5, 5, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.mostraModal{
+    z-index: 222 !important;
+    opacity: 1 !important;
+    transition: .3s !important;
+}
+
+section.modalCastro .corpo{
+    width: 1300px;
+    height: 590px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+div.fecharModal{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.corpo .entrar{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 460px;
+    padding: 20px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.075);
+}
+
+.corpo .entrar header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.corpo .entrar header i{
+    font-size: 3.5rem;
+    color: blue;
+}
+
+.corpo .entrar header h2{
+    font-size: 2.6rem;
+    font-family: var(--font-secundaria);
+}
+
+.corpo .entrar header p{
+    font-family: var(--font-terciaria);
+    font-size: 15px;
+}
+
+.corpo .entrar form{
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo .entrar form label{
+    font-family: var(--font-terciaria);
+    font-weight: normal;
+}
+
+.corpo .entrar form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #eee;
+    padding: 10px;
+    outline: none;
+}
+
+.corpo .entrar .formula p{
+    color: blue;
+    font-family: var(--font-terciaria);
+    margin-bottom: 40px;
+}
+
+.corpo .entrar .formula button{
+    width: 130px;
+    height: 40px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: blue;
+    font-family: var(--font-primaria);
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.corpo .entrar .formula button:hover{
+    background-color: rgb(52, 52, 255);
+}
+
+.corpo .entrar .formula button i{
+    margin-left: 13px;
+}
+
+.corpo .criar{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 560px;
+    padding: 20px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.26);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.822),rgb(235, 4, 58));
+}
+
+.corpo .criar header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.corpo .criar header i{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.corpo .criar header h2{
+    font-size: 2.6rem;
+    font-family: var(--font-secundaria);
+    color: #fff;
+}
+
+.corpo .criar form{
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo .criar form label{
+    font-family: var(--font-terciaria);
+    font-weight: normal;
+    color: #fff;
+}
+
+.corpo .criar form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #eee;
+    padding: 10px;
+    outline: none;
+}
+
+.corpo .criar .formula button{
+    width: 130px;
+    height: 40px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #fff;
+    font-family: var(--font-primaria);
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 25px;
+}
+
+.corpo .criar .formula button i{
+    margin-left: 13px;
+}
+
+
+/*Cabecalho*/
+header.cabecalho{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5S;
+    z-index: 111 !important;
+    position: relative;
+}
+
+div.socialContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 90px 15px 90px;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+div.socialContainer p{
+    color: #fff;
+    font-family: var(--font-terciaria);
+    font-size: 12px
+}
+
+div.social{
+    display: flex;
+    align-items: center;
+}
+
+div.social .btns{
+    margin-right: 40px;
+}
+
+div.social .btns button{
+    border: 2px solid red;
+    background-color: transparent;
+    color: #fff;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.social .btns button:hover{
+    background-color: rgb(182, 4, 4);
+}
+
+div.social a{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+div.social a:last-child{
+    margin: 0;
+}
+
+div.social a:hover{
+    color: red;
+}
+
+div.logoMenu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px 0px 70px;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 1;
+}
+
+.fixaMenu{
+    margin-bottom: 300px;
+    position: fixed !important;
+    top: 0;
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.925) !important;
+}
+
+
+
+div.logoMenu nav.menu-desk{
+    margin-right: -300px;
+}
+
+div.logoMenu nav.menu-desk ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+div.logoMenu nav.menu-desk ul li:last-child{
+    margin: 0;
+}
+
+div.logoMenu nav.menu-desk ul li a{
+    color: #fff;
+    font-family: var(--font-primaria);
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: .5s;
+    padding-bottom:5px;
+    letter-spacing: 1px;
+}
+
+div.logoMenu nav.menu-desk ul li a.ativo{
+    color: rgb(255, 75, 75);
+    border-bottom: 3px solid rgb(255, 75, 75);
+}
+
+div.logoMenu nav.menu-desk ul li a:hover{
+    color: rgb(255, 75, 75);
+    border-bottom: 3px solid rgb(255, 75, 75);
+}
+
+div.procurar{
+    background-color: goldenrod;
+    width: 250px;
+    height: 30px;
+}
+
+div.procurar input{
+    width: 85%;
+    height: 100%;
+    float: left;
+    padding: 7px;
+    font-family: var(--font-terciaria);
+    outline: none;
+    font-size: 14px;
+}
+
+div.procurar button{
+    width: 15%;
+    height: 100%;
+    float: right;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: red;
+    color: #fff;
+    transition: .5s;
+}
+
+div.procurar button:hover{
+    background-color: rgb(252, 67, 67);
+}
+
+/*Rodape*/
+footer.rodape{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.918);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer.rodape .descri{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px 70px 0px 70px;
+}
+
+footer.rodape .descri h2{
+    font-size: 2.5rem;
+    font-family: var(--font-primaria);
+    margin-bottom: 15px;
+}
+
+footer.rodape .descri p{
+    font-size: 1.1rem;
+    font-family: var(--font-terciaria);
+    text-align: center;
+    width: 800px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+footer.rodape .descri .socialFooter{
+    margin-top: 15px;
+}
+.socialFooter a{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    margin-right: 1.3rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.socialFooter a:last-child{
+    margin: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 16px 20px;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer p{
+    color: #fff;
+    font-family: var(--font-primaria);
+}
+
+.footer ul li a{
+    color: #fff;
+    font-family: var(--font-primaria);
+    transition: .5s;
+    text-transform: capitalize;
+}
+
+.footer ul li a:hover{
+    color: rgb(255, 75, 75);
+}
+
+.footer ul li:last-child{
+    margin: 0;
+}

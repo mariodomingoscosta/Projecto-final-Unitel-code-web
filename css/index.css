@@ -1,0 +1,422 @@
+/*Slide*/
+section.slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.slide .parte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 35px;
+    margin-top: 200px;
+}
+
+div.sld {
+    padding: 50px;
+    position: absolute;
+    overflow: hidden;
+}
+
+div.sld2, div.sld3,div.sld1{
+    display: none;
+}
+
+div.sld h2{
+    font-size: 3.3rem;
+    color: #fff;
+    font-family: var(--font-primaria);
+    margin-bottom: 10px;
+    animation: animaH2 1s forwards;
+    opacity: 0;
+}
+
+div.sld span{
+    color: red;
+}
+
+div.sld h3{
+    font-size: 2.3rem;
+    color: #fff;
+    font-family: var(--font-secundaria);
+    margin-bottom: 10px;
+    animation: animaH3 1.5s forwards;
+    opacity: 0;
+}
+
+div.sld p{
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: var(--font-terciaria);
+    margin-bottom: 50px;
+    animation: animaP 2s forwards;
+    opacity: 0;
+}
+
+div.sld button{
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-primaria);
+    animation: animaBtn .8s 1s forwards;
+    opacity: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+div.sld .btn1:hover{
+    background-color: transparent;
+    border: 3px solid red;
+}
+
+div.sld button:last-child{
+    margin-left: 20px;
+    background-color: transparent;
+    border: 3px solid red;
+}
+
+div.sld button:last-child:hover{
+    background-color: red;
+    
+}
+
+/*aniamacao da primeira sessao*/
+@keyframes animaH2{
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes animaH3{
+    from{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes animaP{
+    from{
+        transform: translateY(90px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes animaBtn{
+    from{
+        transform: translatey(90px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*sessao sobre*/
+section.sobre{
+    width: 100%;
+    height: 85vh;
+    background-color: #fff;
+    padding: 10px 70px 0px 70px;
+}
+
+section.sobre h2{
+    font-family: var(--font-primaria);
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+
+section.sobre .corpoSobre{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+
+section.sobre .sobreDesc{
+    width: 24%;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:0 20px 12px rgba(0, 0, 0, 0.055);
+}
+
+section.sobre .sobreDesc i{
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+section.sobre .sobreDesc h3{
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+section.sobre .sobreDesc p{
+    font-family: var(--font-terciaria);
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: initial;
+}
+
+
+.fa-handshake{
+    color: goldenrod;
+}
+
+.fa-truck-fast{
+    color: red;
+}
+
+.fa-map-location-dot{
+    color: rgb(20, 20, 226);
+}
+
+/*Sessao cards DJS*/
+section.cardDjs{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 10px 70px 0px 70px;
+}
+
+section.cardDjs h2{
+    font-family: var(--font-primaria);
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+
+div.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 380px;
+    height: 220px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    transition: .5s;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card h3{
+    position: absolute;
+    color:#fff;
+    margin: 8px 0px 0px 8px;
+    font-size: 1.2rem;
+    background-color: #cc003a91;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: var(--font-primaria);
+    font-weight: normal;
+    transition: .5s all ease-in-out;
+}
+
+.card div.cardDesc{
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+    bottom: -230px;
+    padding: 50px 40px 0 40px;
+    background-color: rgba(0, 0, 0, 0.63);
+    transition: .5s;
+}
+
+.card:hover div.cardDesc{
+    bottom: 0px !important;
+    text-align: center;
+}
+
+.card div.cardDesc h4{
+    font-size: 1.70rem;
+    font-family: var(--font-primaria);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card div.cardDesc p{
+    font-size: 13px;
+    color: #fff;
+    font-family: var(--font-terciaria);
+    margin-bottom: 10px;
+}
+
+.card div.cardDesc i{
+    font-size: 1.6rem;
+    color: #fff;
+    transition: .5s;
+}
+
+/*Djs mais contratado*/
+section.Djs{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 110px;
+    background-color: #fff;
+}
+
+section.Djs h2{
+    width: 100%;
+    font-family: var(--font-primaria);
+    font-size: 2.5rem;
+    margin: 60px 0;
+    padding: 0px 0px 0px 70px;
+}
+
+section.Djs .conheca{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829),rgba(80, 9, 26, 0.801)),url("../img/b4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 90px 0px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.dj{
+    width: 350px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+div.dj .cardConce{
+    width: 90%;
+    height: 170px;
+    background-color: #cc003a8e;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+div.dj .cardConce h4{
+    font-size: 2rem;
+    font-family: var(--font-secundaria);
+    color: #fff;
+}
+
+div.dj .cardConce h5{
+    font-size: 2.3rem;
+    font-family: var(--font-primaria);
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+div.dj .cardConce a{
+    padding: 10px 20px;
+    color:#cc003ae3;
+    background-color: yellow;
+    font-family: var(--font-terciaria);
+    border-radius: 5px;
+}
+
+div.dj1{
+    background-image: url("../img/dj/dj1.jpg");
+}
+
+div.dj2{
+    background-image: url("../img/dj/dj2.jpeg");
+}
+
+div.dj3{
+    background-image: url("../img/dj/dj3.jpg");
+}
+
+
+/*Sessao Modal de cards*/
+section.modalCards{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(5, 5, 5, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.fecharModalCards{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mostraModalCards{
+    z-index: 222 !important;
+    opacity: 1 !important;
+    transition: .3s !important;
+}
+
+section.modalCards .corpo{
+    width: 1000px;
+    height: 590px;
+    background-color: #fff;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.modalCards .corpo .imagemCards{
+    width: 500px;
+}
+
+section.modalCards .corpo .imagemCards h2{
+    font-size: 3rem;
+    margin-top: 20px;
+    font-family: var(--font-primaria);
+}
+
+section.modalCards .corpo .textoCards{
+    width: 300px;
+    padding-top: 30px;
+}
+
+section.modalCards .corpo .textoCards p{
+    font-size: 1.4rem;
+    font-family: var(--font-terciaria);
+}
