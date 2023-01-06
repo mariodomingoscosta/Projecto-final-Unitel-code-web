@@ -361,6 +361,8 @@ footer.rodape{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 999;
+    position: relative;
 }
 
 footer.rodape .descri{

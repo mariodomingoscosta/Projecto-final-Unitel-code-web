@@ -288,6 +288,8 @@ section.Djs{
     height: 100vh;
     margin-bottom: 110px;
     background-color: #fff;
+    z-index: 999;
+    position: relative;
 }
 
 section.Djs h2{
