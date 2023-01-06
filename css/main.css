@@ -401,6 +401,13 @@ footer.rodape .descri .socialFooter{
     border-radius: 50%;
     text-align: center;
     line-height: 3rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.socialFooter a:hover{
+    color: rgb(255, 75, 75);
+    border-color: rgb(255, 75, 75);
 }
 
 .socialFooter a:last-child{
