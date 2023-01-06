@@ -350,6 +350,14 @@ div.dj .cardConce a{
     background-color: yellow;
     font-family: var(--font-terciaria);
     border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.dj .cardConce a:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
 div.dj1{

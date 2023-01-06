@@ -91,8 +91,44 @@ btnCloseModalCards.addEventListener("click",()=>{
     document.querySelector(".modalCards").classList.remove("mostraModalCards")
     document.querySelector("html").style.overflowY="visible"
  })
+
+ //Contagem de contrataçoes~
+ var verifCont;
+ var offsetWindow = 0;
+ var dj1=dj2=dj3=0;
+
+
+ function scrol(){
+    offsetWindow = window.pageYOffset;
+ }
+
+ function contagemContrat(){
+    if(dj1<120) dj1++;
+    if(dj2<90)  dj2++;
+    if(dj3<50)  dj3++;
+    document.querySelector(".numContrat1").innerHTML="Contratações: "+dj1;
+    document.querySelector(".numContrat2").innerHTML="Contratações: "+dj2;
+    document.querySelector(".numContrat3").innerHTML="Contratações: "+dj3;
+ }
+
+ function actulizaContagem(){
+    if((offsetWindow>=2000) && (verifCont)){
+        if((dj1 == 120) && (dj2 == 90) && (dj3==50)){
+            verifCont = false;
+        }
+        contagemContrat();
+    }
+
+ }
+
+ setInterval(actulizaContagem,50);
+ window.addEventListener("scroll",scrol)
+
 //funcao de inicilizaçao
 function inicializador(){
+
+    verifCont = true;
+
     gerenciaSlides();
     slideConteudo[0].style.display="block";
     cabecalho.style.backgroundImage="url('img/bg"+currentImage+".jpg')";
