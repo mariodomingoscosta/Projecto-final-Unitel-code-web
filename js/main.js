@@ -17,6 +17,18 @@ function fixarNoTopo(){
 
 window.addEventListener("scroll",fixarNoTopo)
 
+// Mostrar menu mobile
+const btnBars = document.querySelector(".bars")
+const menuMobile = document.querySelector(".menu-mobile")
+const fecharMenu = document.querySelector(".fechar-menu");
+btnBars.addEventListener("click",()=>{
+     menuMobile.style.right="0";
+})
+
+fecharMenu.addEventListener("click",()=>{
+    menuMobile.style.right="-300px";
+})
+
 // mostrar e ocultar modal de cadastro e Login 
 const btnConectar = document.querySelector(".btnCadas");
 const btnCloseModal = document.querySelector(".fecharModal");

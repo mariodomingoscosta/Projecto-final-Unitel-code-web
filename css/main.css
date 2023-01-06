@@ -282,8 +282,6 @@ div.logoMenu{
     background-color: rgba(0, 0, 0, 0.925) !important;
 }
 
-
-
 div.logoMenu nav.menu-desk{
     margin-right: -300px;
 }
@@ -350,6 +348,67 @@ div.procurar button{
 
 div.procurar button:hover{
     background-color: rgb(252, 67, 67);
+}
+
+/*Menu mobile*/
+nav.menu-mobile{
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: fixed;
+    z-index: 222;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+div.bars{
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.bars:hover{
+    color: rgb(252, 67, 67);
+}
+
+.fechar-menu{
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 15px;
+}
+
+nav.menu-mobile ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 85px;
+}
+
+nav.menu-mobile ul li{
+    margin-bottom: 15px;
+}
+
+nav.menu-mobile ul li:last-child{
+    margin: 0;
+}
+
+nav.menu-mobile ul li a{
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: var(--font-primaria);
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+nav.menu-mobile ul li a:hover{
+    color: rgb(252, 67, 67);
 }
 
 /*Rodape*/
@@ -447,4 +506,54 @@ footer.rodape .descri .socialFooter{
 
 .footer ul li:last-child{
     margin: 0;
+}
+
+/*Responsividades*/
+/* 1ª Cabeçalho*/
+@media screen and (max-width:1071px){
+    div.logoMenu nav.menu-desk{
+        margin-right: -100px;
+    }
+    
+footer.rodape .descri h2{
+    font-size: 2rem;
+}
+
+footer.rodape .descri p{
+    font-size: 15px;
+}
+
+.socialFooter a{
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+ }
+}
+
+@media screen and (max-width:899px){
+    nav.menu-desk{
+        display: none;
+    }
+
+    div.procurar{
+        display: none;
+    }
+
+        
+footer.rodape .descri h2{
+    font-size: 1.5rem;
+}
+
+footer.rodape .descri p{
+    font-size: 12px;
+}
+
+.footer p{
+    font-size: 12px;
+}
+
+.footer ul li a{
+    font-size: 12px;
+}
 }

@@ -29,7 +29,8 @@ function gerenciaSlides(){
         if (slideConteudoActual==2) slideConteudoActual = 0;
         else  slideConteudoActual++;
         tempoSlide =0;
-}
+}     
+    tela()//tira dep
     frame=requestAnimationFrame(gerenciaSlides);
 }
 
@@ -123,6 +124,14 @@ btnCloseModalCards.addEventListener("click",()=>{
 
  setInterval(actulizaContagem,50);
  window.addEventListener("scroll",scrol)
+
+ //Tirar dep
+
+ function tela(){
+    console.log(window.innerWidth);
+ }
+
+ //FIM TIRAR DEP
 
 //funcao de inicilizaçao
 function inicializador(){

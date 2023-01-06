@@ -147,6 +147,7 @@ section.sobre h2{
 section.sobre .corpoSobre{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 } 
 
@@ -286,7 +287,7 @@ div.cards{
 section.Djs{
     width: 100%;
     height: 100vh;
-    margin-bottom: 110px;
+    margin-bottom: 120px;
     background-color: #fff;
     z-index: 111;
     position: relative;
@@ -429,4 +430,148 @@ section.modalCards .corpo .textoCards{
 section.modalCards .corpo .textoCards p{
     font-size: 1.4rem;
     font-family: var(--font-terciaria);
+}
+
+/*Responsividades*/
+/* 1ª Cabeçalho*/
+@media screen and (max-width:1071px){
+    div.sld h2{
+        font-size: 3rem;
+    }
+
+    div.sld h3{
+        font-size: 2rem;
+    }
+    
+    div.sld p{
+        font-size: 1rem;
+    }
+
+    section.cardDjs{
+        margin-bottom: 350px;
+    }
+
+    section.sobre{
+        margin-bottom: 60px;
+    }
+
+    section.sobre h2{
+        font-size: 2rem;
+    }
+
+
+    section.sobre .sobreDesc i{
+        font-size: 4rem;
+    }
+
+    section.sobre .sobreDesc h3{
+        font-size: 1.2rem;
+    }
+
+    section.sobre .sobreDesc p{
+        font-size: 13px;
+    }
+
+
+    section.cardDjs h2{
+        font-size: 2rem;
+    }
+
+    section.Djs h2{
+        font-size: 2rem;
+    }
+
+    
+    div.dj{
+        margin-right: 50px;
+    }
+
+    div.dj:last-child{
+        margin:0px;
+    }
+
+    div.dj .cardConce h4{
+        font-size: 1.5rem;
+    }
+
+    div.dj .cardConce h5{
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    div.dj .cardConce a{
+        padding: 8px 15px;
+        
+    }
+}
+
+@media screen and (max-width:899px){
+    div.sld h2{
+        font-size: 2rem;
+    }
+
+    div.sld h3{
+        font-size: 1.5rem;
+    }
+    
+    div.sld p{
+        font-size: 14px;
+    }
+    div.sld button{
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        background-color: red;
+        color: #fff;
+    }
+
+    section.sobre{
+        margin-bottom: 200px;
+    }
+    
+    section.sobre .corpoSobre{
+        flex-direction: wrap;
+    } 
+    
+    section.sobre .sobreDesc{
+        margin-bottom: 40px;
+        width: 45%;
+    }
+
+    .card{
+        width: 350px;
+    }
+        
+    .card div.cardDesc h4{
+        font-size: 1.10rem;
+    }
+
+    .card div.cardDesc p{
+        font-size: 12px;
+    }
+
+    div.dj{
+        margin-right: 50px;
+    }
+
+    div.dj:last-child{
+        margin:0px;
+    }
+
+    div.dj .cardConce h4{
+        font-size: 1.2rem;
+    }
+
+    div.dj .cardConce h5{
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    div.dj .cardConce a{
+        padding: 6px 10px;
+    }
+
+    section.Djs{
+        margin-bottom: 107px;
+    }
 }
