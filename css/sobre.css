@@ -1,0 +1,91 @@
+header.cabecalho{
+    width: 100%;
+    height: 155px !important;
+    margin-bottom: 0;
+}
+
+div.logoMenu{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+div.socialContainer{
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+section.sbr{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    margin-bottom: 250px;
+    padding: 10px 70px 0px 70px;;
+}
+
+.sbrCorpo{
+    display: flex;
+}
+
+.sbrDescr{
+    height: 100%;
+}
+
+.sbrDescr h2{
+    font-size: 4rem;
+    font-family: var(--font-primaria);
+    margin: 25px 0px;
+}
+
+.sbrDescr p{
+    font-size: 1.2rem;
+    font-family: var(--font-terciaria);
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+div.img h5{
+    font-size: 1.5rem;
+    font-family: var(--font-primaria);
+}
+
+div.img form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 5px 5px 5px;
+}
+
+div.img form input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+div.img form label{
+    font-family: var(--font-terciaria);
+}
+
+div.img form textarea{
+    width: 80%;
+    height: 100px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #eee;
+    outline: none;
+}
+
+div.img form button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    font-size: 1.1rem;
+    background-color: red;
+    color: #fff;
+    font-family: var(--font-primaria);
+    cursor: pointer;
+    outline: none;
+}
+
+footer{
+    margin:0;
+}
