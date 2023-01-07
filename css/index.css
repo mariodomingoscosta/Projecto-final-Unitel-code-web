@@ -288,8 +288,7 @@ section.Djs{
     width: 100%;
     height: 100vh;
     margin-bottom: 120px;
-    background-color: #fff;
-    z-index: 111;
+    z-index: 11;
     position: relative;
 }
 
@@ -573,5 +572,154 @@ section.modalCards .corpo .textoCards p{
 
     section.Djs{
         margin-bottom: 107px;
+    }
+}
+
+@media screen and (max-width:500px){
+    section.slide .parte1{
+        padding: 35px;
+        margin-top: 150px;
+    }
+    
+    div.sld h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    div.sld h3{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    div.sld p{
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+
+    div.sld button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    /*sessao sobre*/
+section.sobre{
+    width: 100%;
+    margin-bottom: 800px;
+}
+
+section.sobre h2{
+    font-size: 1.5rem;
+}
+
+section.sobre .corpoSobre{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+section.sobre .sobreDesc{
+    width: 100%;
+}
+
+section.cardDjs{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 1050px;
+}
+section.cardDjs h2{
+   font-size:1.5rem;
+}
+
+section.Djs h2{
+    font-size:1.5rem;
+}
+
+section.Djs .conheca{
+    width: 100%;
+    padding:0px;
+    display: flex;
+    justify-content:space-between;
+}
+
+div.dj{
+    width: 150px;
+    height: 100%;
+    margin: 0;
+}
+
+div.dj .cardConce h4{
+    font-size: 1rem;
+}
+/************************************/
+section.modalCards{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(5, 5, 5, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+section.modalCards .corpo{
+    width: 500px;
+    height: 590px;
+    flex-direction: column;
+}
+
+section.modalCards .corpo .imagemCards{
+    width: 400px;
+}
+
+section.modalCards .corpo .imagemCards h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+section.modalCards .corpo .textoCards{
+    width: 300px;
+}
+
+section.modalCards .corpo .textoCards p{
+    font-size: 1rem;
+}
+
+}
+
+@media screen and (max-width:360px){
+    section.slide .parte1{
+        padding: 35px;
+        margin-top: 100px;
+    }
+    
+    div.sld h2{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    div.sld h3{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    div.sld p{
+        font-size: 9px;
+        margin-bottom: 25px;
+    }
+
+    section.sobre{
+        width: 100%;
+        margin-bottom: 1200px;
+    }
+
+    section.cardDjs{
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 1100px;
     }
 }

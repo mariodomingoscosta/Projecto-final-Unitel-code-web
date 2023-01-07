@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 /*Fontes de letras / variáveis*/
 :root{
     --font-primaria:"Oswald";
@@ -329,6 +333,7 @@ div.procurar input{
     font-family: var(--font-terciaria);
     outline: none;
     font-size: 14px;
+    border: none;
 }
 
 div.procurar button{
@@ -588,4 +593,162 @@ footer.rodape .descri p{
     .footer ul li a{
         font-size: 12px;
     }
+}
+
+@media screen and (max-width:500px){
+    
+div.socialContainer{
+    padding: 15px 30px 15px 30px;
+}
+
+div.socialContainer p{
+    font-size: 10px
+}
+
+div.social .btns{
+    margin-right: 10px;
+}
+
+div.social .btns button{
+    width: 80px;
+   
+}
+/*Sessao conectar-se*/
+
+section.modalCastro .corpo{
+    width: 450px;
+    height: 590px;
+}
+
+.corpo .entrar{
+    width: 300px;
+    height: 400px;
+}
+
+.corpo .entrar header{
+    margin-bottom: 50px;
+}
+
+.corpo .entrar header i{
+    font-size: 2rem;
+    color: blue;
+}
+
+.corpo .entrar header h2{
+    font-size: 1.5rem;
+}
+
+.corpo .entrar header p{
+    font-size: 12px;
+}
+
+.corpo .entrar form label{
+    font-size: 12px;
+}
+
+.corpo .entrar form input{
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.corpo .entrar .formula p{
+    font-size: 11px;
+    margin-bottom: 40px;
+}
+
+.corpo .entrar .formula button{
+    width: 90px;
+    height: 35px;
+    border: none;
+    font-size: 1rem;
+}
+/*****************************/
+
+.corpo .criar{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 450px;
+}
+
+.corpo .criar header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.corpo .criar header i{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.corpo .criar header h2{
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    color: #fff;
+}
+
+.corpo .criar label{
+    font-size: 14px;
+}
+
+.corpo .criar form input{
+    width: 100%;
+    height: 30px;
+}
+
+.corpo .criar .formula button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    font-size: 1rem;
+}
+
+footer.rodape .descri h2{
+    font-size: 1rem;
+}
+
+footer.rodape .descri p{
+    font-size: 11px;
+    width: 400px;
+}
+
+.footer{
+    flex-direction: column;
+}
+
+.footer p{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.footer ul li a{
+    font-size: 12px;
+}
+
+}
+
+@media screen and (max-width:360px){
+    footer.rodape .descri h2{
+        font-size: 1rem;
+    }
+    
+    footer.rodape .descri p{
+        font-size: 11px;
+        width: 400px;
+    }
+    
+    .footer{
+        flex-direction: column;
+    }
+    
+    .footer p{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .footer ul li a{
+        font-size: 12px;
+    }
+    
 }
