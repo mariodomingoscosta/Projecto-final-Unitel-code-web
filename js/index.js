@@ -113,7 +113,7 @@ btnCloseModalCards.addEventListener("click",()=>{
  }
 
  function actulizaContagem(){
-    if((offsetWindow>=2000) && (verifCont)){
+    if((offsetWindow>=1700) && (verifCont)){
         if((dj1 == 120) && (dj2 == 90) && (dj3==50)){
             verifCont = false;
         }

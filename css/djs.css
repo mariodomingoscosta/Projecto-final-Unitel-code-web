@@ -1,0 +1,141 @@
+header.cabecalho{
+    width: 100%;
+    height: 155px !important;
+    margin-bottom: 0;
+}
+
+div.logoMenu{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+div.socialContainer{
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+footer{
+    margin:0;
+}
+
+section.djsCasa{
+    padding: 50px;
+    position: relative;
+    z-index: 11;
+}
+
+.djsCasa h2{
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-family: var(--font-primaria);
+}
+
+div.djscasaCorp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.casa{
+    width: 300px;
+    height: 350px;
+    background-color: #eee;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.casa img{
+    width:300px;
+    height: 350px;
+}
+
+.casa h3{
+    position: absolute;
+    left: 20px;
+    bottom: 20px ;
+    font-size: 1.6rem;
+    font-family: var(--font-primaria);
+    color:#fff;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+section.djsCasa hr{
+    border: 2px solid #eee;
+}
+
+div.fazerParte h3{
+    font-size: 2.5rem;
+    font-family: var(--font-primaria);
+    margin-top: 25px;
+}
+
+div.fazerParte form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+div.fazerParte form label{
+    margin-bottom: 5px;
+    font-family: var(--font-terciaria);
+}
+
+div.fazerParte form input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #eee;
+    margin-bottom: 25px;
+    outline: none;
+    padding: 10px;
+}
+
+div.fazerParte form button{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    font-family: var(--font-primaria);
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width:1071px){
+    div.djscasaCorp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+       
+    }
+
+    .casa{
+        margin-right: 10px;
+    }
+
+    .djsCasa h2{
+        font-size: 2rem;
+    }
+
+    div.fazerParte h3{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:899px){
+    div.djscasaCorp{
+        justify-content: center;
+    }
+
+    .casa{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .djsCasa h2{
+        font-size: 1.5rem;
+    }
+
+    div.fazerParte h3{
+        font-size: 1.5rem;
+    }
+}

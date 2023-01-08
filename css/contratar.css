@@ -11,20 +11,17 @@ div.socialContainer{
     background-color: rgba(0, 0, 0, 0.952);
 }
 
-/*sessao contratar*/
-section.contratar{
-    width: 100%;
-    height: 100vh;
-}
-
 footer{
     margin:0;
 }
+
+/*sessao contratar*/
 
 section.contratar{
     padding: 50px;
     position: relative;
     z-index: 11;
+    width: 100%;
 }
 
 .contratarCorp h2{
@@ -42,6 +39,7 @@ section.contratar{
 .formDj form{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .formDj .dadosPess{
@@ -66,20 +64,16 @@ section.contratar{
 }
 
 .djInfo{
-    width: 500px;
+    width: 700px;
     display: flex;
+    justify-content: space-between;
 }
 
 .djInfo .parte1{
     width: 240px;
     display: flex;
     flex-direction: column;
-}
-
-.djInfo .parte2{
-    width: 240px;
-    display: flex;
-    flex-direction: column;
+    margin-right: 20px;
 }
 
 .parte1 label{
@@ -95,3 +89,82 @@ section.contratar{
     border: 1px solid #eee;
     outline: none;
 }
+
+.djInfo .part2{
+    width: 400px;
+}
+.part2 label{
+    font-family: var(--font-terciaria);
+}
+
+.part2 label.tMusica{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.part2 textarea{
+    width: 500px;
+    max-width:500px;
+    height:110px;
+    max-height: 120px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+section.contratar p{
+    font-family: var(--font-terciaria);
+    margin:20px 0px;
+}
+
+section.contratar button{
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    font-family: var(--font-primaria);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:1071px){
+    .contratarCorp h2{
+        font-size: 2rem;
+      }
+
+      .formDj form{
+        flex-wrap: nowrap;
+    }
+
+    .part2 textarea{
+        width: 250px;
+        max-width:250px;
+    }
+}
+
+@media screen and (max-width:899px){
+    .formDj form{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .formDj .dadosPess{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .contratarCorp h2{
+        font-size: 1.5rem;
+      }
+
+      .contratarCorp p{
+        font-size: 14px;
+      }
+
+      .djInfo{
+        display: block;
+      }
+}
+
