@@ -12,12 +12,28 @@ html{
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: Oswald;
+    src: url(../Fontsletra/Oswald/static/Oswald-Bold.ttf);
+    src: url(../Fontsletra/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Balsamiq;
+    src: url(../Fontsletra/Balsamiq_Sans/BalsamiqSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:Commissioner ;
+    src: url(../Fontsletra/Commissioner/Commissioner-VariableFont_wght.ttf);
+}
+
 
 /*Fontes de letras / variáveis*/
 :root{
-    --font-primaria:"Oswald";
-    --font-secundaria:"Balsamiq Sans";
-    --font-terciaria:"Commissioner";
+    --font-primaria:Oswald;
+    --font-secundaria:Balsamiq Sans;
+    --font-terciaria:Commissioner;
 }
 
 /*Sessao conectar-se*/
