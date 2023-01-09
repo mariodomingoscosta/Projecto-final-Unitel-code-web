@@ -45,6 +45,11 @@ div.djscasaCorp{
 .casa img{
     width:300px;
     height: 350px;
+    transition: .5s;
+}
+
+.casa img:hover{
+    transform: scale(1.02);
 }
 
 .casa h3{

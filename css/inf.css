@@ -1,0 +1,122 @@
+header.cabecalho{
+    width: 100%;
+    height: 155px !important;
+    margin-bottom: 0;
+}
+
+div.logoMenu{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+div.socialContainer{
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+footer{
+    margin:0;
+}
+
+section.djsInformacao{
+    padding: 50px;
+    position: relative;
+    z-index: 11;
+}
+
+section.djsInformacao h2{
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-family: var(--font-primaria);
+}
+
+.djsInformacaoCorp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.informacaoImg{
+    width: 420px;
+    height: 420px;
+}
+
+.informacaoImg img{
+    width: 420px;
+}
+
+div.informacao{
+    margin-left: 60px;
+    position: relative;
+}
+
+div.informacao p{
+    font-size: 2.5rem;
+    font-family: var(--font-terciaria);
+    color: rgb(134, 133, 133);
+    margin-bottom: 15px;
+}
+
+div.informacao p span{
+    color: #000;
+}
+
+div.informacao a{
+    padding: .5rem 4rem;
+    margin-top: 2rem;
+    background-color: red;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--font-primaria);
+    position: absolute;
+    bottom: 0;
+    transition: .5s;
+}
+
+div.informacao a:hover{
+    background-color: rgb(253, 81, 81);
+}
+
+
+@media screen and (max-width:1071px){
+
+section.djsInformacao h2{
+    font-size: 2rem;
+}
+
+
+div.informacao{
+    margin-left: 40px;
+}
+
+div.informacao p{
+    font-size: 2rem;
+}
+
+div.informacao a{
+    padding: .5rem 3rem;
+}
+}
+
+@media screen and (max-width:899px){
+    
+section.djsInformacao h2{
+    font-size: 1.5rem;
+}
+
+
+div.informacao{
+    margin-left: 30px;
+}
+
+div.informacao p{
+    font-size: 1.5rem;
+}
+
+div.informacao a{
+    padding: .5rem 3rem;
+}
+}
+
+@media screen and (max-width:500px){
+    div.informacao{
+        height: 300px;
+    }
+}
